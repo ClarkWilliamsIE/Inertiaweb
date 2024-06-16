@@ -84,7 +84,7 @@ body, html {
 #middle {
     width: 100%;
     height: 80vh;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("images/DSC00252.JPG") center center fixed;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("background.JPG") center center fixed;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
