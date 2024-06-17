@@ -311,7 +311,7 @@ button:focus {
 
 /* New CSS for the People section */
 #people {
-    text-align: left;
+    text-align: centre;
 }
 
 .team-member {
