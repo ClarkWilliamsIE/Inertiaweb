@@ -93,7 +93,7 @@ body,html {
 }
 #portfolio div h1 {
     font-size:40px;
-    background-image: linear-gradient(to left, #FF416C 0%, #FF4B2B 100%);
+    background-image: linear-gradient(to left, #CCE5E5 0%, #CCE5E5 100%);
     -webkit-background-clip:text;
     background-clip:text;
     -webkit-text-fill-color: transparent;
@@ -257,7 +257,7 @@ body,html {
 
 #footer a {
     font-size: 18px;
-    background-image: linear-gradient(to left, #FF416C 0%, #FF4B2B 100%);
+    background-image: linear-gradient(to left, #CCE5E5 0%, #CCE5E5 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -311,7 +311,7 @@ button:focus {
 
 /* New CSS for the People section */
 #people {
-    text-align: center;
+    text-align: left;
 }
 
 .team-member {
