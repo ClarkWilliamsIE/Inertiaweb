@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $("a").on('click', function(event) {
-        if (this.hash !== "") {
+        if (this.hash !== "" && this.pathname === window.location.pathname) {
             event.preventDefault();
             var hash = this.hash;
             $('body,html').animate({
@@ -31,3 +31,4 @@ setTimeout(function() {
         $("#loading").css("display", "none");
     }, 800);
 }, 1450);
+
