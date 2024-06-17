@@ -113,7 +113,7 @@ body, html {
 
 #portfolio div h1 {
     font-size: 40px;
-    background-image: linear-gradient(to left, #2166a 0%, #2166a 100%);
+    background-image: linear-gradient(to left, #FF416C 0%, #FF416C 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
