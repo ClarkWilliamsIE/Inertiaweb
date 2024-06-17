@@ -25,7 +25,7 @@ body, html {
     width: 60px;
     height: 60px;
     border: 6px solid #fff;
-    border-bottom: 6px solid #2166a8;
+    border-bottom: 6px solid #000;
     border-radius: 50%;
     margin: 0;
 }
@@ -63,7 +63,7 @@ body, html {
 }
 
 #links {
-    margin: 40px 0px;
+    margin: 10px 0px;
     transition: 0.6s ease-in-out;
     color: #fff;
 }
@@ -107,7 +107,7 @@ body, html {
 
 #portfolio div h1 {
     font-size: 40px;
-    background-image: linear-gradient(to left, #FF416C 0%, #FF4B2B 100%);
+    background-image: linear-gradient(to left, #2166a 0%, #2166a 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
