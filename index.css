@@ -316,4 +316,24 @@ button:focus {
 
 .team-member {
     display: inline-block;
-    margin:
+    margin: 20px;
+    text-align: center;
+}
+
+.circle-frame {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.circle-frame img {
+    width: 100%;
+    height: auto;
+}
+
