@@ -37,11 +37,15 @@
             font-size: 1.1rem;
             line-height: 1.6;
         }
+        #makertruck .images {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
         #makertruck img {
             width: 100%;
             height: auto;
             border-radius: 10px;
-            margin-bottom: 15px;
         }
         /* Styles for image tiles */
         .tiles {
@@ -79,6 +83,10 @@
         }
         .tile:hover .overlay {
             opacity: 1;
+        }
+        .tiles-heading {
+            width: 100%;
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -123,14 +131,16 @@
                         This initiative paves the way for future leaders and problem-solvers in Aotearoa, ensuring equal access to STEAM education and guaranteeing the sustainability and success of our projects.
                     </p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 images">
                     <img src="https://via.placeholder.com/600x400" alt="Makertruck Image">
                     <img src="https://via.placeholder.com/600x400" alt="Makertruck Image">
                 </div>
             </div>
-            <div class="tiles">
+            <div class="tiles-heading">
                 <h3>Project Gallery</h3>
                 <p>Explore some of the innovative projects created through the Makertruck initiative.</p>
+            </div>
+            <div class="tiles">
                 <div class="tile">
                     <img src="https://via.placeholder.com/300x200" alt="Tile 1">
                     <div class="overlay">Tile 1 Description</div>
