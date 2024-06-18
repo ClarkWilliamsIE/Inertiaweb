@@ -10,6 +10,77 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+    <style>
+        /* Additional styles for Makertruck page */
+        #makertruck {
+            padding: 50px 0;
+        }
+        #makertruck .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        #makertruck .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+        #makertruck .col-md-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding: 15px;
+        }
+        #makertruck h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        #makertruck p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        #makertruck img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        /* Styles for image tiles */
+        .tiles {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 30px 0;
+        }
+        .tile {
+            flex: 1;
+            min-width: 200px;
+            max-width: 300px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .tile img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .tile .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .tile:hover .overlay {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
     <div id="loading">
@@ -18,81 +89,68 @@
     <div id="header" class="animated slideInDown" style="animation-delay:1.8s;">
         <div id="title">Inertia Education</div><br>
         <div id="links">
-            <a href="#outline" style="margin:0px 20px;">Outline</a>
-            <a href="#projects" style="margin:0px 20px;">Projects</a>
-            <a href="#outcomes" style="margin:0px 20px;">Outcomes</a>
-            <a href="#support" style="margin:0px 20px;">Support</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html#about-us">About Us</a>
+            <a href="index.html#outline" style="margin:0px 20px;">Outline</a>
+            <a href="index.html#projects" style="margin:0px 20px;">Projects</a>
+            <a href="index.html#outcomes" style="margin:0px 20px;">Outcomes</a>
+            <a href="index.html#people" style="margin:0px 20px;">People</a>
+            <a href="index.html#support" style="margin:0px 20px;">Support</a>
+            <a href="index.html#contact">Contact</a>
         </div>
     </div>
 
     <center>
     <div id="middle">
         <div id="tagline" class="animated zoomIn" style="animation-delay:1.8s;">
-            Transforming Education Through Innovation<br>
-            <a href="makertruck.html"><button class="btn_one">Learn More</button></a>
+            Makertruck Project<br>
+            <a href="#makertruck"><button class="btn_one">Learn More</button></a>
         </div>
     </div>
     </center>
 
-    <div id="portfolio">
-        <div id="outline">
-            <h1>The Makertruck Project</h1>
-            <p>
-                The Mobile Makerspace Initiative is a groundbreaking portable STEAM education platform that aims to transform the learning landscape in Aotearoa. By collaborating with partner schools during year-long residencies, we develop ambitious, high-tech, and creative engineering projects that challenge students to acquire new skills and implement them.
-            </p>
-            <p>
-                This initiative bridges the digital divide by providing access to cutting-edge technology and learning experiences for students who may not have had the opportunity otherwise.
-            </p>
-            <p>
-                By enhancing professional development for teachers and fostering a culture of innovation and curiosity, we pave the way for future leaders and problem-solvers in Aotearoa.
-            </p>
-            <p>
-                Our commitment to engaging the community and ensuring equal access to STEAM education guarantees the sustainability and success of the project, ultimately shaping the next generation of creative thinkers.
-            </p>
-            <p>
-                The model will be funded by a unique not for profit/MOE partnership which will allow for sustainable use of funding and a very productive use of charity income.
-            </p>
-            <a href="makertruck.html"><button class="btn_one">Learn More</button></a>
-        </div>
-
-        <div id="projects">
-            <h1>Potential Projects</h1>
-            <div class="project-images">
-                <img src="images/Irihapeti_Mahuika-3x2-1.jpg" alt="Project Image 1">
-                <img src="images/Irihapeti_Mahuika-3x2-1.jpg" alt="Project Image 2">
-                <img src="images/Irihapeti_Mahuika-3x2-1.jpg" alt="Project Image 3">
-                <img src="images/Irihapeti_Mahuika-3x2-1.jpg" alt="Project Image 4">
+    <div id="makertruck">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Makertruck Project</h2>
+                    <p>
+                        The Makertruck is a groundbreaking mobile makerspace initiative designed to bring cutting-edge STEAM education to communities across Aotearoa. By partnering with schools for year-long residencies, we create ambitious, high-tech, and creative engineering projects that challenge students to acquire new skills and implement them in real-world scenarios.
+                    </p>
+                    <p>
+                        Our goal is to bridge the digital divide by providing access to the latest technology and learning experiences for students who may not have had the opportunity otherwise. We enhance professional development for teachers and foster a culture of innovation and curiosity.
+                    </p>
+                    <p>
+                        This initiative paves the way for future leaders and problem-solvers in Aotearoa, ensuring equal access to STEAM education and guaranteeing the sustainability and success of our projects.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/600x400" alt="Makertruck Image">
+                    <img src="https://via.placeholder.com/600x400" alt="Makertruck Image">
+                </div>
             </div>
-        </div>
-
-        <div id="outcomes">
-            <h1>Community Outcomes</h1>
-            <p>
-                Our initiative fosters positive community outcomes by providing a platform for students to engage with STEAM disciplines, bridging the gap between traditional education and real-world applications. We enhance problem-solving and critical-thinking skills, fostering a generation of innovative thinkers and passionate creators.
-            </p>
-        </div>
-
-        <div id="support">
-            <h1>How to Support</h1>
-            <p>
-                We rely on the generous support of donors and partners to make our vision a reality. Whether through financial contributions, providing resources, or partnering with us for projects, your support is invaluable. Contact us to learn more about how you can contribute to our mission.
-            </p>
-        </div>
-
-        <div id="contact">
-            <h1>Contact Us</h1>
-            <form>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required><br>
-                <textarea placeholder="Your Message" required rows="5"></textarea><br>
-                <button class="btn_one">Send</button>
-            </form>
-            <div id="details">
-                <a class="btn_social"><i class="fas fa-phone"></i></a>
-                <a class="btn_social"><i class="fas fa-at"></i></a>
-                <a class="btn_social"><i class="fab fa-twitter"></i></a>
-                <a class="btn_social"><i class="fab fa-dribbble"></i></a>
+            <div class="tiles">
+                <h3>Project Gallery</h3>
+                <p>Explore some of the innovative projects created through the Makertruck initiative.</p>
+                <div class="tile">
+                    <img src="https://via.placeholder.com/300x200" alt="Tile 1">
+                    <div class="overlay">Tile 1 Description</div>
+                </div>
+                <div class="tile">
+                    <img src="https://via.placeholder.com/300x200" alt="Tile 2">
+                    <div class="overlay">Tile 2 Description</div>
+                </div>
+                <div class="tile">
+                    <img src="https://via.placeholder.com/300x200" alt="Tile 3">
+                    <div class="overlay">Tile 3 Description</div>
+                </div>
+                <div class="tile">
+                    <img src="https://via.placeholder.com/300x200" alt="Tile 4">
+                    <div class="overlay">Tile 4 Description</div>
+                </div>
+                <div class="tile">
+                    <img src="https://via.placeholder.com/300x200" alt="Tile 5">
+                    <div class="overlay">Tile 5 Description</div>
+                </div>
             </div>
         </div>
     </div>
