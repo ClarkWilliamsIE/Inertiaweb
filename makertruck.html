@@ -14,6 +14,7 @@
         /* Additional styles for Makertruck page */
         #makertruck {
             padding: 50px 0;
+            text-align: center;
         }
         #makertruck .container {
             max-width: 1200px;
@@ -36,11 +37,6 @@
         #makertruck p {
             font-size: 1.1rem;
             line-height: 1.6;
-        }
-        #makertruck .images {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
         }
         #makertruck img {
             width: 100%;
@@ -84,9 +80,23 @@
         .tile:hover .overlay {
             opacity: 1;
         }
-        .tiles-heading {
-            width: 100%;
-            margin-bottom: 10px;
+        .image-box {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+        .image-box img {
+            border-radius: 10px;
+            width: 48%;
+        }
+        .section-title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        .section-description {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
         }
     </style>
 </head>
@@ -118,47 +128,43 @@
 
     <div id="makertruck">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Makertruck Project</h2>
-                    <p>
-                        The Makertruck is a groundbreaking mobile makerspace initiative designed to bring cutting-edge STEAM education to communities across Aotearoa. By partnering with schools for year-long residencies, we create ambitious, high-tech, and creative engineering projects that challenge students to acquire new skills and implement them in real-world scenarios.
-                    </p>
-                    <p>
-                        Our goal is to bridge the digital divide by providing access to the latest technology and learning experiences for students who may not have had the opportunity otherwise. We enhance professional development for teachers and foster a culture of innovation and curiosity.
-                    </p>
-                    <p>
-                        This initiative paves the way for future leaders and problem-solvers in Aotearoa, ensuring equal access to STEAM education and guaranteeing the sustainability and success of our projects.
-                    </p>
-                </div>
-                <div class="col-md-6 images">
-                    <img src="https://via.placeholder.com/600x400" alt="Makertruck Image">
-                    <img src="https://via.placeholder.com/600x400" alt="Makertruck Image">
-                </div>
+            <h2>Makertruck Project</h2>
+            <p>
+                The Makertruck is a groundbreaking mobile makerspace initiative designed to bring cutting-edge STEAM education to communities across Aotearoa. By partnering with schools for year-long residencies, we create ambitious, high-tech, and creative engineering projects that challenge students to acquire new skills and implement them in real-world scenarios.
+            </p>
+            <p>
+                Our goal is to bridge the digital divide by providing access to the latest technology and learning experiences for students who may not have had the opportunity otherwise. We enhance professional development for teachers and foster a culture of innovation and curiosity.
+            </p>
+            <p>
+                This initiative paves the way for future leaders and problem-solvers in Aotearoa, ensuring equal access to STEAM education and guaranteeing the sustainability and success of our projects.
+            </p>
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1573495612893-233bf07a9d3b" alt="Makertruck Image 1">
+                <img src="https://images.unsplash.com/photo-1573495612893-233bf07a9d3b" alt="Makertruck Image 2">
             </div>
-            <div class="tiles-heading">
-                <h3>Project Gallery</h3>
-                <p>Explore some of the innovative projects created through the Makertruck initiative.</p>
+            <div class="section-title">Our Projects</div>
+            <div class="section-description">
+                Discover the innovative and impactful projects developed through the Makertruck initiative, fostering creativity and technical skills in students across Aotearoa.
             </div>
             <div class="tiles">
                 <div class="tile">
-                    <img src="https://via.placeholder.com/300x200" alt="Tile 1">
+                    <img src="images/Irihapeti_Mahuika-3x2-1.jpg" alt="Tile 1">
                     <div class="overlay">Tile 1 Description</div>
                 </div>
                 <div class="tile">
-                    <img src="https://via.placeholder.com/300x200" alt="Tile 2">
+                    <img src="images/Irihapeti_Mahuika-3x2-1.jpg" alt="Tile 2">
                     <div class="overlay">Tile 2 Description</div>
                 </div>
                 <div class="tile">
-                    <img src="https://via.placeholder.com/300x200" alt="Tile 3">
+                    <img src="images/Irihapeti_Mahuika-3x2-1.jpg" alt="Tile 3">
                     <div class="overlay">Tile 3 Description</div>
                 </div>
                 <div class="tile">
-                    <img src="https://via.placeholder.com/300x200" alt="Tile 4">
+                    <img src="images/Irihapeti_Mahuika-3x2-1.jpg" alt="Tile 4">
                     <div class="overlay">Tile 4 Description</div>
                 </div>
                 <div class="tile">
-                    <img src="https://via.placeholder.com/300x200" alt="Tile 5">
+                    <img src="images/Irihapeti_Mahuika-3x2-1.jpg" alt="Tile 5">
                     <div class="overlay">Tile 5 Description</div>
                 </div>
             </div>
