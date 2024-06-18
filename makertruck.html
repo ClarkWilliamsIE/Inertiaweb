@@ -42,6 +42,43 @@
             height: auto;
             border-radius: 10px;
         }
+        /* Styles for image tiles */
+        .tiles {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 30px 0;
+        }
+        .tile {
+            flex: 1;
+            min-width: 200px;
+            max-width: 300px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .tile img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .tile .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .tile:hover .overlay {
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
@@ -89,6 +126,28 @@
                     <img src="images/makertruck.jpg" alt="Makertruck Image">
                 </div>
             </div>
+            <div class="tiles">
+                <div class="tile">
+                    <img src="images/tile1.jpg" alt="Tile 1">
+                    <div class="overlay">Tile 1 Description</div>
+                </div>
+                <div class="tile">
+                    <img src="images/tile2.jpg" alt="Tile 2">
+                    <div class="overlay">Tile 2 Description</div>
+                </div>
+                <div class="tile">
+                    <img src="images/tile3.jpg" alt="Tile 3">
+                    <div class="overlay">Tile 3 Description</div>
+                </div>
+                <div class="tile">
+                    <img src="images/tile4.jpg" alt="Tile 4">
+                    <div class="overlay">Tile 4 Description</div>
+                </div>
+                <div class="tile">
+                    <img src="images/tile5.jpg" alt="Tile 5">
+                    <div class="overlay">Tile 5 Description</div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -99,4 +158,3 @@
     <script src="index.js" type="text/javascript"></script>
 </body>
 </html>
-
