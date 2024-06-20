@@ -1,5 +1,11 @@
 $(document).ready(function() {
     $("a").on('click', function(event) {
+        // Check if the link is pointing to a different page
+        if (this.hostname !== window.location.hostname) {
+            return; // Allow default behavior for external links
+        }
+
+        // Check if the link points to a section within the same page
         if (this.hash !== "" && this.pathname === window.location.pathname) {
             event.preventDefault();
             var hash = this.hash;
