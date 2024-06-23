@@ -311,7 +311,7 @@ button:focus {
 
 /* New CSS for the People section */
 #people {
-    text-align: centre;
+    text-align: center;
 }
 
 .team-member {
@@ -371,8 +371,7 @@ button:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 0;
-    padding-bottom: 75%; /* This maintains the aspect ratio */
+    height: 200px; /* Fixed height */
 }
 .tile img {
     width: 100%;
@@ -425,8 +424,7 @@ button:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 0;
-    padding-bottom: 75%; /* This maintains the aspect ratio */
+    height: 100px; /* Fixed height */
 }
 .small-tile img {
     width: 100%;
