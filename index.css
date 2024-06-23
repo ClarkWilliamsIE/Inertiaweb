@@ -368,15 +368,13 @@ button:focus {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 200px; /* Fixed height */
 }
 .tile img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 .tile .overlay {
     position: absolute;
@@ -421,15 +419,13 @@ button:focus {
     position: relative;
     overflow: hidden;
     border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100px; /* Fixed height */
 }
 .small-tile img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 .small-tile .overlay {
     position: absolute;
