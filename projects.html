@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="loading">
-        <div id="spinner"></div>
     </div>
     <div id="header" class="animated slideInDown" style="animation-delay:1.8s;">
         <div id="title">Inertia Education</div><br>
@@ -142,6 +140,14 @@ engineering, problem-solving, computational thinking, sports science</li>
         Made by Clark Williams<br><br>
         <a href="https://inertiaed.org">inertiaed.org</a>
     </div>
+    <script>
+        $(document).ready(function() {
+            $('html, body').animate({
+                scrollTop: $('#portfolio').offset().top
+            }, 1000); // Adjust the speed of the scroll (3000 = 1 second)
+        });
+    </script>
     <script src="index.js" type="text/javascript"></script>
-
+</body>
 </html>
+
