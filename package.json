@@ -1,0 +1,12 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo \"No build script provided\" && exit 0"
+  },
+  "dependencies": {
+    "nodemailer": "^6.6.3"
+  }
+}
