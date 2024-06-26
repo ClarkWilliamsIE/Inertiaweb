@@ -14,19 +14,21 @@ exports.handler = async function(event, context) {
 
   // Set up nodemailer transporter
   let transporter = nodemailer.createTransport({
-    service: 'gmail',
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: false, // true for 465, false for other ports
     auth: {
-      user: 'your-email@gmail.com',
-      pass: 'your-email-password'
+      user: process.env.SMTP_USER, // your email address from environment variable
+      pass: process.env.SMTP_PASS // your email password from environment variable
     }
   });
 
   // Set up email data
   let mailOptions = {
-    from: email,
-    to: 'your-email@gmail.com',
+    from: `Clark <${process.env.SMTP_USER}>`,
+    to: process.env.SMTP_USER, // sending email to your own address
     subject: `New contact from ${name}`,
-    text: message
+    text: `You have received a new message from ${name} (${email}):\n\n${message}`
   };
 
   // Send email
