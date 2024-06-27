@@ -10,6 +10,113 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            font-family: 'Comfortaa', sans-serif;
+        }
+
+        #header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+
+        #title {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        #links a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        #middle {
+            margin-top: 50px;
+        }
+
+        #tagline {
+            font-size: 2em;
+            color: #555;
+        }
+
+        .btn_one {
+            background-color: #555;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #portfolio {
+            padding: 50px;
+            text-align: center;
+        }
+
+        #people h1, #support h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .team-member {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .circle-frame img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        #contact-form {
+            margin: 50px auto;
+            max-width: 600px;
+            text-align: left;
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #contact-form input, #contact-form textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        #contact-form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        #footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+            margin-top: 50px;
+        }
+
+        #footer a {
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <div id="header" class="animated slideInDown" style="animation-delay:1.8s;">
@@ -67,7 +174,7 @@
             </p>
         </div>
         
-        <form id="contact-form" action="https://formspree.io/f/xjkbbzoq" method="POST">
+        <form id="contact-form" action="https://formspree.io/YOUR_FORM_ID" method="POST">
             <input type="text" name="name" placeholder="Name" required>
             <input type="email" name="email" placeholder="Email" required><br>
             <textarea name="message" placeholder="Your Message" required rows="5"></textarea><br>
