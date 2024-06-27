@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    </div>
     <div id="header" class="animated slideInDown" style="animation-delay:1.8s;">
         <div id="title">Inertia Education</div><br>
         <div id="links">
@@ -67,35 +66,14 @@
               Our team has an extensive history in the education sector, teaching across Aotearoa and internationally. Collectively, we have a track record of being at the forefront of education, not just in terms of research but with practical experience. Equity, culturally empowering, and innovative practice is our focus while building capacity for all young people in Aotearoa to access the best education experience there is to offer. 
             </p>
         </div>
-<form id="contact-form">
-    <input type="text" name="name" placeholder="Name" required>
-    <input type="email" name="email" placeholder="Email" required><br>
-    <textarea name="message" placeholder="Your Message" required rows="5"></textarea><br>
-    <button class="btn_one" type="submit">Send</button>
-</form>
+        
+        <form id="contact-form" action="https://formspree.io/YOUR_FORM_ID" method="POST">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <textarea name="message" placeholder="Your Message" required rows="5"></textarea><br>
+            <button class="btn_one" type="submit">Send</button>
+        </form>
 
-<script>
-  document.getElementById('contact-form').addEventListener('submit', async function(event) {
-    event.preventDefault();
-    const formData = new FormData(event.target);
-    const data = {
-      name: formData.get('name'),
-      email: formData.get('email'),
-      message: formData.get('message')
-    };
-
-    const response = await fetch('/.netlify/functions/contact', {
-      method: 'POST',
-      body: JSON.stringify(data)
-    });
-
-    const result = await response.json();
-    alert(result.message || result.error);
-  });
-</script>
-
-          
-        </div>
     </div>
 
     <div id="footer">
