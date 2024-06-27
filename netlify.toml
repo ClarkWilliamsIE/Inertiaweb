@@ -1,5 +1,6 @@
 [build]
-  functions = "functions"
+  publish = "dist"
+  command = "npm run build"
 
-[build.environment]
-  NODE_VERSION = "16.14.0"
+[functions]
+  directory = "netlify/functions"
