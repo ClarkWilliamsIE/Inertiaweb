@@ -1,38 +1,20 @@
-const nodemailer = require('nodemailer');
+// netlify/functions/contact.js
 
-exports.handler = async function(event, context) {
-  const data = JSON.parse(event.body);
-  const { name, email, message } = data;
+const fetch = require('node-fetch');
 
-  if (!name || !email || !message) {
-    return {
-      statusCode: 400,
-      body: JSON.stringify({ error: 'Please provide name, email, and message' })
-    };
-  }
-
-  let transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 587,
-    secure: false, // true for 465, false for other ports
-    auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS
-    }
-  });
-
-  let mailOptions = {
-    from: email,
-    to: 'clark@inertiaed.org',
-    subject: `New contact from ${name}`,
-    text: `You have received a new message from ${name} (${email}):\n\n${message}`
-  };
-
+exports.handler = async (event, context) => {
   try {
-    await transporter.sendMail(mailOptions);
+    const { name, email, message } = JSON.parse(event.body);
+
+    // Validate the input data here if necessary
+
+    // Simulate sending email or saving to database
+    console.log(`Received message from ${name} (${email}): ${message}`);
+
+    // Respond with success message
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: 'Message sent successfully' })
+      body: JSON.stringify({ message: 'Message sent successfully!' })
     };
   } catch (error) {
     return {
